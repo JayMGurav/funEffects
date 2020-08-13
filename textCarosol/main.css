@@ -1,0 +1,92 @@
+body{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-color:#fff;
+    font-family: 'Open Sans', sans-serif;
+    color: #b1b1b1;
+  }
+  .text{
+    font-size: 6vw;
+    font-weight: 600;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+  }
+  .box{
+    display: block;
+    width:90%;
+    margin:auto;
+  }
+  span{
+    color: #000;
+  }
+
+  p{
+    display: inline;
+    vertical-align: top;
+    margin:auto;
+  }
+  
+  .word{
+    position: absolute;
+    width: 40%;
+    opacity: 0;
+  }
+  
+  .letter{
+    display: inline;
+    position: relative;
+    float: left;
+    transform: translateZ(25px);
+    transform-origin: 50% 50% 25px;
+  }
+  
+  .letter.out{
+    transform: rotateX(90deg);
+    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  
+  .letter.behind{
+    transform: rotateX(-90deg);
+  }
+  
+  .letter.in {
+    transform: rotateX(0deg); 
+    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+ /*///////////button/////////////*/
+ .btn{
+   width: 40%;
+   margin: 0%;
+   position: absolute;
+   left: 25.5%;
+   top:80%;
+   transform: translate(-50%,-50%);
+   /* background-color:aqua;  */
+ }
+.or{
+  font-size:1.6em;
+  margin:4% ;
+  width:20%;
+  background-color: #fff;
+ }
+ .sign{
+   margin: 0%;
+  font-size:1.5em;
+  padding: 2%;
+  width:40%; 
+  border: 2px solid #000;
+  border-radius:4px;
+  background-color: #fff;
+  color: #000;
+  transition:all 0.2s ease-out;
+ }
+ .sign:hover{
+   border: none;
+   color: #fff;
+   background-color: #000;
+   box-shadow: 0px 16px 60px rgba(0,0,0,0.3);
+ }
